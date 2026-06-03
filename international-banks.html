@@ -25,7 +25,8 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
     <!-- Schema.org Complete Structured Data -->
     <script type="application/ld+json">
@@ -405,69 +406,83 @@
   <body>
     <div class="max-w-7xl mx-auto bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl">
       <nav class="mb-6 md:mb-8 text-center">
-        <div class="flex flex-wrap justify-center gap-2 md:gap-4">
-          <a href="index.html" class="inline-block bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors no-underline text-sm md:text-base">🏠 Home</a>
-          <a href="indian-banks.html" class="inline-block bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors no-underline text-sm md:text-base">🇮🇳 Indian Banks</a>
-          <a href="international-banks.html" class="inline-block bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors no-underline text-sm md:text-base">🌍 International Banks</a>
+        <div class="flex flex-wrap justify-center items-center gap-2 md:gap-4">
+          <a href="index.html" class="inline-flex items-center gap-2 text-gray-600 text-sm md:text-base">
+            <img src="/assets/icons/home.svg" alt="Home" class="w-4 h-4 md:w-5 md:h-5">
+            <span>Home</span>
+          </a>
+          <span class="text-gray-700 font-bold">•</span>
+          <a href="indian-banks.html" class="inline-flex items-center gap-2 text-gray-600 text-sm md:text-base">
+            <img src="/assets/icons/india.svg" alt="Indian Banks" class="w-4 h-4 md:w-5 md:h-5">
+            <span>Indian Banks</span>
+          </a>
+          <span class="text-gray-700 font-bold">•</span>
+          <a href="#" class="inline-flex items-center gap-2 text-blue font-semibold text-sm md:text-base">
+            <img src="/assets/icons/international.svg" alt="International Banks" class="w-4 h-4 md:w-5 md:h-5">
+            <span>International Banks</span>
+          </a>
         </div>
       </nav>
-      
-      <header class="text-center mb-8 md:mb-10 pb-6 md:pb-8 border-b-4 border-purple-600">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 gradient-text">
-          🌍 International Bank Logos
-        </h1>
-        <p class="text-lg sm:text-xl md:text-2xl text-gray-600">
+
+      <header class="text-center mb-8 md:mb-12">
+        <div class="flex items-center justify-center gap-4 md:gap-6 mb-4 md:mb-6">
+          <img src="/assets/icons/international.svg" alt="International Bank Logos Logo" class="w-12 h-12 md:w-16 md:h-16 shrink-0">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium font-primary text-gray-700">
+            International Bank Logos
+          </h1>
+        </div>
+        <p class="mb-8">
           Comprehensive collection of 50+ international bank logos from 25+ countries
         </p>
       </header>
       
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12 p-4 md:p-8 bg-linear-to-r from-purple-600 to-purple-800 rounded-2xl text-white">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12 p-4 md:p-8 bg-linear-to-b from-gray-600 to-gray-800 rounded-2xl text-white">
         <div class="text-center">
-          <span class="block text-3xl md:text-4xl lg:text-5xl font-bold">50+</span>
-          <span class="text-sm md:text-base lg:text-lg opacity-90">Global Banks</span>
+          <span class="block text-2xl md:text-3xl font-semibold mb-2">50+</span>
+          <span class="text-sm md:text-base">Global Banks</span>
         </div>
         <div class="text-center">
-          <span class="block text-3xl md:text-4xl lg:text-5xl font-bold">25+</span>
-          <span class="text-sm md:text-base lg:text-lg opacity-90">Countries</span>
+          <span class="block text-2xl md:text-3xl font-semibold mb-2">25+</span>
+          <span class="text-sm md:text-base">Countries</span>
         </div>
         <div class="text-center col-span-2 md:col-span-1">
-          <span class="block text-3xl md:text-4xl lg:text-5xl font-bold">SVG</span>
-          <span class="text-sm md:text-base lg:text-lg opacity-90">Format</span>
+          <span class="block text-2xl md:text-3xl font-semibold mb-2">SVG</span>
+          <span class="text-sm md:text-base">Format</span>
         </div>
       </div>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇦🇺 Australia
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/anz.svg" alt="ANZ Banking Group Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/anz.svg" alt="ANZ Banking Group Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">ANZ Banking Group</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇦🇺 Australia</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">anz.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/commonwealth.svg" alt="Commonwealth Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/commonwealth.svg" alt="Commonwealth Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Commonwealth Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇦🇺 Australia</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">commonwealth.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/nab.svg" alt="National Australia Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/nab.svg" alt="National Australia Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">National Australia Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇦🇺 Australia</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">nab.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/westpac.svg" alt="Westpac Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/westpac.svg" alt="Westpac Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Westpac</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇦🇺 Australia</div>
@@ -477,45 +492,45 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇺🇸 United States of America
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/american-express.svg" alt="American Express Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/american-express.svg" alt="American Express Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">American Express</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇺🇸 USA</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">american-express.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/boa.svg" alt="Bank of America Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/boa.svg" alt="Bank of America Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Bank of America</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇺🇸 USA</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">boa.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/citi.svg" alt="Citibank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/citi.svg" alt="Citibank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Citibank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇺🇸 USA</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">citi.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/chase.svg" alt="JPMorgan Chase Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/chase.svg" alt="JPMorgan Chase Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">JPMorgan Chase</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇺🇸 USA</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">chase.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/wells.svg" alt="Wells Fargo Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/wells.svg" alt="Wells Fargo Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Wells Fargo</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇺🇸 USA</div>
@@ -525,37 +540,37 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇬🇧 United Kingdom
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/barclays.svg" alt="Barclays Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/barclays.svg" alt="Barclays Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Barclays</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇬🇧 UK</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">barclays.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/hsbc.svg" alt="HSBC Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/hsbc.svg" alt="HSBC Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">HSBC</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇬🇧 UK</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">hsbc.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/standard.svg" alt="Standard Chartered Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/standard.svg" alt="Standard Chartered Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Standard Chartered Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇬🇧 UK</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">standard.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/natwest.svg" alt="NatWest Group Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/natwest.svg" alt="NatWest Group Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">NatWest Group</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇬🇧 Scotland</div>
@@ -565,29 +580,29 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇯🇵 Japan
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/mizuho.svg" alt="Mizuho Corporate Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/mizuho.svg" alt="Mizuho Corporate Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Mizuho Corporate Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇯🇵 Japan</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">mizuho.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/mufg.svg" alt="MUFG Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/mufg.svg" alt="MUFG Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">MUFG Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇯🇵 Japan</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">mufg.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/smbc.svg" alt="Sumitomo Mitsui Banking Corporation Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/smbc.svg" alt="Sumitomo Mitsui Banking Corporation Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Sumitomo Mitsui Banking Corporation</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇯🇵 Japan</div>
@@ -597,29 +612,29 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇸🇬 Singapore
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/dbs.svg" alt="DBS Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/dbs.svg" alt="DBS Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">DBS Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇸🇬 Singapore</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">dbs.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/ocbc.svg" alt="OCBC Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/ocbc.svg" alt="OCBC Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">OCBC Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇸🇬 Singapore</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">ocbc.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/uob.svg" alt="United Overseas Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/uob.svg" alt="United Overseas Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">United Overseas Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇸🇬 Singapore</div>
@@ -629,29 +644,29 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇦🇪 United Arab Emirates
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/adcb.svg" alt="Abu Dhabi Commercial Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/adcb.svg" alt="Abu Dhabi Commercial Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Abu Dhabi Commercial Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇦🇪 UAE</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">adcb.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/emirates-nbd.svg" alt="Emirates NBD Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/emirates-nbd.svg" alt="Emirates NBD Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Emirates NBD</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇦🇪 UAE</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">emirates-nbd.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/fab.svg" alt="First Abu Dhabi Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/fab.svg" alt="First Abu Dhabi Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">First Abu Dhabi Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇦🇪 UAE</div>
@@ -661,21 +676,21 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇨🇳 China
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/boc.svg" alt="Bank of China Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/boc.svg" alt="Bank of China Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Bank of China</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇨🇳 China</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">boc.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/icbc.svg" alt="Industrial & Commercial Bank of China Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/icbc.svg" alt="Industrial & Commercial Bank of China Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Industrial & Commercial Bank of China</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇨🇳 China</div>
@@ -685,45 +700,45 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇰🇷 South Korea
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/korea-bank.svg" alt="Industrial Bank of Korea Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/korea-bank.svg" alt="Industrial Bank of Korea Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Industrial Bank of Korea</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇰🇷 South Korea</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">korea-bank.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/hana.svg" alt="KEB Hana Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/hana.svg" alt="KEB Hana Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">KEB Hana Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇰🇷 South Korea</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">hana.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/kookmin.svg" alt="Kookmin Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/kookmin.svg" alt="Kookmin Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Kookmin Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇰🇷 South Korea</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">kookmin.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/shinhan.svg" alt="Shinhan Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/shinhan.svg" alt="Shinhan Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Shinhan Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇰🇷 South Korea</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">shinhan.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/woori.svg" alt="Woori Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/woori.svg" alt="Woori Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Woori Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇰🇷 South Korea</div>
@@ -733,29 +748,29 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇫🇷 France
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/bnp.svg" alt="BNP Paribas Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/bnp.svg" alt="BNP Paribas Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">BNP Paribas</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇫🇷 France</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">bnp.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/societe-generale.svg" alt="Société Générale Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/societe-generale.svg" alt="Société Générale Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Société Générale</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇫🇷 France</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">societe-generale.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/cacib.svg" alt="Crédit Agricole CIB Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/cacib.svg" alt="Crédit Agricole CIB Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Crédit Agricole CIB</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇫🇷 France</div>
@@ -765,21 +780,21 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇨🇭 Switzerland
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/credit-suisse.svg" alt="Credit Suisse Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/credit-suisse.svg" alt="Credit Suisse Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Credit Suisse</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇨🇭 Switzerland</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">credit-suisse.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/ubs.svg" alt="UBS Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/ubs.svg" alt="UBS Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">UBS</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇨🇭 Switzerland</div>
@@ -789,29 +804,29 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🇨🇦 Canada
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/rbc.svg" alt="Royal Bank of Canada Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/rbc.svg" alt="Royal Bank of Canada Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Royal Bank of Canada</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇨🇦 Canada</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">rbc.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/scotia.svg" alt="Scotiabank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/scotia.svg" alt="Scotiabank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Scotiabank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇨🇦 Canada</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">scotia.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/td.svg" alt="TD Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/td.svg" alt="TD Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">TD Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇨🇦 Canada</div>
@@ -821,117 +836,117 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-purple-600 to-purple-800 text-white rounded-xl flex items-center gap-3">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #537fbb, #318867) 1;">
           🌍 Other Countries
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/bbk.svg" alt="Bank of Bahrain and Kuwait Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/bbk.svg" alt="Bank of Bahrain and Kuwait Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Bank of Bahrain and Kuwait</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇧🇭 Bahrain</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">bbk.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/sonali.svg" alt="Sonali Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/sonali.svg" alt="Sonali Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Sonali Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇧🇩 Bangladesh</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">sonali.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/saxo.svg" alt="Saxo Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/saxo.svg" alt="Saxo Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Saxo Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇩🇰 Denmark</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">saxo.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/deutsche.svg" alt="Deutsche Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/deutsche.svg" alt="Deutsche Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Deutsche Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇩🇪 Germany</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">deutsche.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/maybank.svg" alt="Bank Maybank Indonesia Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/maybank.svg" alt="Bank Maybank Indonesia Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Bank Maybank Indonesia</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇩 Indonesia</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">maybank.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/abn-amro.svg" alt="ABN AMRO Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/abn-amro.svg" alt="ABN AMRO Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">ABN AMRO</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇳🇱 Netherlands</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">abn-amro.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/rabobank.svg" alt="Rabobank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/rabobank.svg" alt="Rabobank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Rabobank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇳🇱 Netherlands</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">rabobank.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/doha.svg" alt="Doha Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/doha.svg" alt="Doha Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Doha Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇶🇦 Qatar</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">doha.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/qnb.svg" alt="Qatar National Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/qnb.svg" alt="Qatar National Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Qatar National Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇶🇦 Qatar</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">qnb.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/sberbank.svg" alt="Sberbank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/sberbank.svg" alt="Sberbank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Sberbank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇷🇺 Russia</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">sberbank.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/firstrand.svg" alt="FirstRand Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/firstrand.svg" alt="FirstRand Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">FirstRand Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇿🇦 South Africa</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">firstrand.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/ceylon-bank.svg" alt="Bank of Ceylon Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/ceylon-bank.svg" alt="Bank of Ceylon Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Bank of Ceylon</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇱🇰 Sri Lanka</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">ceylon-bank.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/handelsbanken.svg" alt="Handelsbanken Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/handelsbanken.svg" alt="Handelsbanken Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Handelsbanken</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇸🇪 Sweden</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">handelsbanken.svg</div>
           </div>
           <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/international-bank/krungthai.svg" alt="Krung Thai Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/international-bank/krungthai.svg" alt="Krung Thai Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Krung Thai Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇹🇭 Thailand</div>
@@ -943,15 +958,15 @@
 
       <footer class="mt-12 md:mt-16 pt-6 md:pt-8 border-t-2 border-gray-200 text-center text-gray-600">
         <p class="text-base md:text-lg mb-3">Part of the comprehensive Bank Logos Collection</p>
-        <p class="flex flex-wrap justify-center gap-2 md:gap-4 text-sm md:text-base mb-6">
-          <a href="index.html">🏠 Home</a>
-          <span class="hidden sm:inline">|</span>
-          <a href="indian-banks.html">🇮🇳 Indian Banks</a>
-          <span class="hidden sm:inline">|</span>
-          <a href="https://github.com/yourusername/all-bank-logo" target="_blank">⭐ Star on GitHub</a>
+        <p class="flex flex-wrap justify-center items-center gap-2 md:gap-4 text-sm md:text-base mb-6">
+          <a href="index.html" class="flex items-center gap-1"><img src="/assets/icons/home.svg" alt="Home" class="w-4 h-4 inline-block" onerror="this.style.display='none'" />Home</a>
+          <span>•</span>
+          <a href="international-banks.html" class="flex items-center gap-1"><img src="/assets/icons/international.svg" alt="International Banks" class="w-4 h-4 inline-block" onerror="this.style.display='none'" />International Banks</a>
+          <span>•</span>
+          <a href="https://github.com/yourusername/all-bank-logo" target="_blank" class="flex items-center gap-1"><img src="/assets/icons/star.svg" alt="Star Ratings on GitHub" class="w-4 h-4 inline-block" onerror="this.style.display='none'" />Star on GitHub</a>
         </p>
         <p class="text-xs md:text-sm text-gray-500 px-4">
-          Keywords: international bank logos, chase bank logo, citibank logo, hsbc logo, barclays logo, wells fargo logo, bank of america logo, dbs logo, mufg logo, deutsche bank logo, bnp paribas logo, global bank logos, world bank logos
+          <span class="font-semibold">Keywords:</span> indian bank logos, sbi logo, hdfc bank logo, icici bank logo, axis bank logo, kotak logo, pnb logo, bob logo, canara bank logo, payment bank logos india, small finance bank logos, public sector bank logos, private bank logos india
         </p>
       </footer>
     </div>

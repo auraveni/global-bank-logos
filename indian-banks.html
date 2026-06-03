@@ -25,7 +25,8 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
     <!-- Schema.org Complete Structured Data -->
     <script type="application/ld+json">
@@ -44,7 +45,7 @@
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Axis Bank Ltd Logo",
-                    "image": "src/assets/bank/indian-bank/axis.svg"
+                    "image": "/assets/bank/indian-bank/axis.svg"
           },
           {
                     "@type": "ListItem",
@@ -294,205 +295,219 @@
   <body>
     <div class="max-w-7xl mx-auto bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl">
       <nav class="mb-6 md:mb-8 text-center">
-        <div class="flex flex-wrap justify-center gap-2 md:gap-4">
-          <a href="index.html" class="inline-block bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors no-underline text-sm md:text-base">🏠 Home</a>
-          <a href="indian-banks.html" class="inline-block bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors no-underline text-sm md:text-base">🇮🇳 Indian Banks</a>
-          <a href="international-banks.html" class="inline-block bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors no-underline text-sm md:text-base">🌍 International Banks</a>
+        <div class="flex flex-wrap justify-center items-center gap-2 md:gap-4">
+          <a href="index.html" class="inline-flex items-center gap-2 text-gray-600 text-sm md:text-base">
+            <img src="/assets/icons/home.svg" alt="Home" class="w-4 h-4 md:w-5 md:h-5">
+            <span>Home</span>
+          </a>
+          <span class="text-gray-700 font-bold">•</span>
+          <a href="#" class="inline-flex items-center gap-2 text-blue font-semibold text-sm md:text-base">
+            <img src="/assets/icons/india.svg" alt="Indian Banks" class="w-4 h-4 md:w-5 md:h-5">
+            <span>Indian Banks</span>
+          </a>
+          <span class="text-gray-700 font-bold">•</span>
+          <a href="international-banks.html" class="inline-flex items-center gap-2 text-gray-600 text-sm md:text-base">
+            <img src="/assets/icons/international.svg" alt="International Banks" class="w-4 h-4 md:w-5 md:h-5">
+            <span>International Banks</span>
+          </a>
         </div>
       </nav>
       
-      <header class="text-center mb-8 md:mb-10 pb-6 md:pb-8 border-b-4 border-purple-600">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 gradient-text-indian">
-          🇮🇳 Indian Bank Logos
-        </h1>
-        <p class="text-lg sm:text-xl md:text-2xl text-gray-600">
+      <header class="text-center mb-8 md:mb-12">
+        <div class="flex items-center justify-center gap-4 md:gap-6 mb-4 md:mb-6">
+          <img src="/assets/icons/india.svg" alt="Indian Bank Logos Logo" class="w-12 h-12 md:w-16 md:h-16 shrink-0">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium font-primary text-gray-700">
+            Indian Bank Logos
+          </h1>
+        </div>
+        <p class="mb-8">
           Comprehensive collection of 42+ Indian bank logos in SVG format
         </p>
       </header>
       
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12 p-4 md:p-8 bg-linear-to-r from-orange-500 via-white to-green-600 rounded-2xl">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12 p-4 md:p-8 bg-linear-to-b from-gray-600 to-gray-800 rounded-2xl text-white">
         <div class="text-center">
-          <span class="block text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">42+</span>
-          <span class="text-sm md:text-base lg:text-lg text-gray-700 font-semibold">Indian Banks</span>
+          <span class="block text-2xl md:text-3xl font-semibold mb-2">42+</span>
+          <span class="text-sm md:text-base">Indian Banks</span>
         </div>
         <div class="text-center">
-          <span class="block text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">4</span>
-          <span class="text-sm md:text-base lg:text-lg text-gray-700 font-semibold">Categories</span>
+          <span class="block text-2xl md:text-3xl font-semibold mb-2">4</span>
+          <span class="text-sm md:text-base">Categories</span>
         </div>
         <div class="text-center col-span-2 md:col-span-1">
-          <span class="block text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">SVG</span>
-          <span class="text-sm md:text-base lg:text-lg text-gray-700 font-semibold">Format</span>
+          <span class="block text-2xl md:text-3xl font-semibold mb-2">SVG</span>
+          <span class="text-sm md:text-base">Format</span>
         </div>
       </div>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-orange-500 via-white to-green-600 rounded-xl text-gray-800">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #ff9933, #ffffff, #000088, #ffffff, #318867) 1;">
           Private Sector Banks
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/axis.svg" alt="Axis Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-2">
+              <img src="/assets/bank/indian-bank/axis.svg" alt="Axis Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Axis Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">axis.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/bandhan.svg" alt="Bandhan Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/bandhan.svg" alt="Bandhan Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Bandhan Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">bandhan.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/csb.svg" alt="CSB Bank Limited Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/csb.svg" alt="CSB Bank Limited Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">CSB Bank Limited</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">csb.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/cub.svg" alt="City Union Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/cub.svg" alt="City Union Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">City Union Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">cub.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/dcb.svg" alt="DCB Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/dcb.svg" alt="DCB Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">DCB Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">dcb.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/dhanlaxmi.svg" alt="Dhanlaxmi Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/dhanlaxmi.svg" alt="Dhanlaxmi Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Dhanlaxmi Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">dhanlaxmi.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/federal.svg" alt="Federal Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/federal.svg" alt="Federal Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Federal Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">federal.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/hdfc.svg" alt="HDFC Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/hdfc.svg" alt="HDFC Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">HDFC Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">hdfc.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/icici.svg" alt="ICICI Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/icici.svg" alt="ICICI Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">ICICI Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">icici.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/indus.svg" alt="IndusInd Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/indus.svg" alt="IndusInd Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">IndusInd Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">indus.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/idfc.svg" alt="IDFC FIRST Bank Limited Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/idfc.svg" alt="IDFC FIRST Bank Limited Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">IDFC FIRST Bank Limited</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">idfc.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/jnk.svg" alt="Jammu & Kashmir Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/jnk.svg" alt="Jammu & Kashmir Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Jammu & Kashmir Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">jnk.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/karnataka.svg" alt="Karnataka Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/karnataka.svg" alt="Karnataka Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Karnataka Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">karnataka.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/kvb.svg" alt="Karur Vysya Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/kvb.svg" alt="Karur Vysya Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Karur Vysya Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">kvb.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/kotak.svg" alt="Kotak Mahindra Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/kotak.svg" alt="Kotak Mahindra Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Kotak Mahindra Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">kotak.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/ntb.svg" alt="Nainital Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/ntb.svg" alt="Nainital Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Nainital Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">ntb.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/rbl.svg" alt="RBL Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/rbl.svg" alt="RBL Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">RBL Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">rbl.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/sib.svg" alt="South Indian Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/sib.svg" alt="South Indian Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">South Indian Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">sib.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/tmb.svg" alt="Tamilnad Mercantile Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/tmb.svg" alt="Tamilnad Mercantile Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Tamilnad Mercantile Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">tmb.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/yes.svg" alt="YES Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/yes.svg" alt="YES Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">YES Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">yes.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/idbi.svg" alt="IDBI Bank Limited Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/idbi.svg" alt="IDBI Bank Limited Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">IDBI Bank Limited</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
@@ -502,101 +517,101 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-orange-500 via-white to-green-600 rounded-xl text-gray-800">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #ff9933, #ffffff, #000088, #ffffff, #318867) 1;">
           Public Sector Banks in India
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/bob.svg" alt="Bank of Baroda Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/bob.svg" alt="Bank of Baroda Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Bank of Baroda</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">bob.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/boi.svg" alt="Bank of India Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/boi.svg" alt="Bank of India Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Bank of India</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">boi.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/bom.svg" alt="Bank of Maharashtra Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/bom.svg" alt="Bank of Maharashtra Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Bank of Maharashtra</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">bom.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/canara.svg" alt="Canara Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/canara.svg" alt="Canara Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Canara Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">canara.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/cbi.svg" alt="Central Bank of India Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/cbi.svg" alt="Central Bank of India Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Central Bank of India</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">cbi.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/indian.svg" alt="Indian Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/indian.svg" alt="Indian Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Indian Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">indian.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/iob.svg" alt="Indian Overseas Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/iob.svg" alt="Indian Overseas Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Indian Overseas Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">iob.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/psb.svg" alt="Punjab & Sind Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/psb.svg" alt="Punjab & Sind Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Punjab & Sind Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">psb.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/pnb.svg" alt="Punjab National Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/pnb.svg" alt="Punjab National Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Punjab National Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">pnb.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/sbi.svg" alt="State Bank of India Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/sbi.svg" alt="State Bank of India Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">State Bank of India</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">sbi.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/uco.svg" alt="UCO Bank Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/uco.svg" alt="UCO Bank Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">UCO Bank</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">uco.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/ubi.svg" alt="Union Bank of India Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/ubi.svg" alt="Union Bank of India Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Union Bank of India</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
@@ -606,29 +621,29 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-orange-500 via-white to-green-600 rounded-xl text-gray-800">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #ff9933, #ffffff, #000088, #ffffff, #318867) 1;">
           Small Finance Banks
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/ausfb.svg" alt="AU Small Finance Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/ausfb.svg" alt="AU Small Finance Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">AU Small Finance Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">ausfb.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/esaf.svg" alt="ESAF Small Finance Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/esaf.svg" alt="ESAF Small Finance Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">ESAF Small Finance Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">esaf.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/ujjivan.svg" alt="Ujjivan Small Finance Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/ujjivan.svg" alt="Ujjivan Small Finance Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Ujjivan Small Finance Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
@@ -638,45 +653,45 @@
       </section>
       
       <section class="mb-8 md:mb-12">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 p-4 md:p-6 bg-linear-to-r from-orange-500 via-white to-green-600 rounded-xl text-gray-800">
+        <h2 class="text-2xl md:text-3xl font-medium font-primary text-gray-700 mb-6 md:mb-8 border-b-2 pb-3" style="border-bottom-style: solid; border-image: linear-gradient(to right, #ff9933, #ffffff, #000088, #ffffff, #318867) 1;">
           Payment Banks (PB)
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/apb.svg" alt="Airtel Payments Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/apb.svg" alt="Airtel Payments Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Airtel Payments Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">apb.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/indiapost.svg" alt="India Post Payments Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/indiapost.svg" alt="India Post Payments Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">India Post Payments Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">indiapost.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/fino.svg" alt="FINO Payments Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/fino.svg" alt="FINO Payments Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">FINO Payments Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">fino.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/paytm.svg" alt="Paytm Payments Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/paytm.svg" alt="Paytm Payments Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Paytm Payments Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
             <div class="text-xs font-mono text-gray-500 bg-gray-200 px-2 py-1 rounded inline-block">paytm.svg</div>
           </div>
-          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center hover:shadow-xl hover:border-purple-600 transform hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-            <div class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
-              <img src="src/assets/bank/indian-bank/jio.svg" alt="Jio Payments Bank Ltd Logo" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 md:p-6 text-center cursor-pointer">
+            <div class="w-18 mx-auto mb-4 flex items-center justify-center bg-white rounded-xl p-3 md:p-4">
+              <img src="/assets/bank/indian-bank/jio.svg" alt="Jio Payments Bank Ltd Logo" class="w-16 object-contain" loading="lazy" />
             </div>
             <div class="font-semibold text-sm md:text-base lg:text-lg text-gray-800 mb-2">Jio Payments Bank Ltd</div>
             <div class="text-xs md:text-sm text-gray-600 mb-3">🇮🇳 India</div>
@@ -688,15 +703,15 @@
 
       <footer class="mt-12 md:mt-16 pt-6 md:pt-8 border-t-2 border-gray-200 text-center text-gray-600">
         <p class="text-base md:text-lg mb-3">Part of the comprehensive Bank Logos Collection</p>
-        <p class="flex flex-wrap justify-center gap-2 md:gap-4 text-sm md:text-base mb-6">
-          <a href="index.html">🏠 Home</a>
-          <span class="hidden sm:inline">|</span>
-          <a href="international-banks.html">🌍 International Banks</a>
-          <span class="hidden sm:inline">|</span>
-          <a href="https://github.com/yourusername/all-bank-logo" target="_blank">⭐ Star on GitHub</a>
+        <p class="flex flex-wrap justify-center items-center gap-2 md:gap-4 text-sm md:text-base mb-6">
+          <a href="index.html" class="flex items-center gap-1"><img src="/assets/icons/home.svg" alt="Home" class="w-4 h-4 inline-block" onerror="this.style.display='none'" />Home</a>
+          <span>•</span>
+          <a href="international-banks.html" class="flex items-center gap-1"><img src="/assets/icons/international.svg" alt="International Banks" class="w-4 h-4 inline-block" onerror="this.style.display='none'" />International Banks</a>
+          <span>•</span>
+          <a href="https://github.com/yourusername/all-bank-logo" target="_blank" class="flex items-center gap-1"><img src="/assets/icons/star.svg" alt="Star Ratings on GitHub" class="w-4 h-4 inline-block" onerror="this.style.display='none'" />Star on GitHub</a>
         </p>
         <p class="text-xs md:text-sm text-gray-500 px-4">
-          Keywords: indian bank logos, sbi logo, hdfc bank logo, icici bank logo, axis bank logo, kotak logo, pnb logo, bob logo, canara bank logo, payment bank logos india, small finance bank logos, public sector bank logos, private bank logos india
+          <span class="font-semibold">Keywords:</span> indian bank logos, sbi logo, hdfc bank logo, icici bank logo, axis bank logo, kotak logo, pnb logo, bob logo, canara bank logo, payment bank logos india, small finance bank logos, public sector bank logos, private bank logos india
         </p>
       </footer>
     </div>

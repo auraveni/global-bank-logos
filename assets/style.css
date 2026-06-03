@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* CSS Custom Properties (Variables) */
 :root {
   /* Brand Fonts */
   --font-primary: "Playfair Display", serif;
-  --font-secondary: "Lato", sans-serif;
+  --font-secondary: "Mulish", sans-serif;
 
   /* Brand Colors */
     --color-blue: #537fbb;
     --color-green: #318867;
     --color-orange: #ff9933;
-
+    --color-red: #AC3B61;
+    --color-yellow: #F4B941;
 }
 
 /* Global body styling - Frontend specific */
 body {
   font-family: var(--font-secondary);
+  color: #333;
 }
 
 /* ============================================
@@ -44,6 +46,14 @@ body {
   color: var(--color-orange);
 }
 
+.text-red {
+  color: var(--color-red);
+}
+
+.text-yellow {
+  color: var(--color-yellow);
+}
+
 /* Background Colors */
 .bg-blue {
   background-color: var(--color-blue);
@@ -56,3 +66,104 @@ body {
 .bg-orange {
   background-color: var(--color-orange);
 }
+
+.bg-red {
+  background-color: var(--color-red);
+}
+
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+
+/* Hover Background Colors */
+.hover-bg-blue:hover {
+  background-color: var(--color-blue);
+}
+
+.hover-bg-green:hover {
+  background-color: var(--color-green);
+}
+
+.hover-bg-orange:hover {
+  background-color: var(--color-orange);
+}
+
+.hover-bg-red:hover {
+  background-color: var(--color-red);
+}
+
+.hover-bg-yellow:hover {
+  background-color: var(--color-yellow);
+}
+
+/* Border Colors */
+.border-blue {
+  border-color: var(--color-blue);
+}
+
+.border-green {
+  border-color: var(--color-green);
+}
+
+.border-orange {
+  border-color: var(--color-orange);
+}
+
+.border-red {
+  border-color: var(--color-red);
+}
+
+.border-yellow {
+  border-color: var(--color-yellow);
+}
+
+Hover Border Colors */
+.hover-border-blue:hover {
+  border-color: var(--color-blue);
+}
+
+.hover-border-green:hover {
+  border-color: var(--color-green);
+}
+
+.hover-border-orange:hover {
+  border-color: var(--color-orange);
+}
+
+.hover-border-red:hover {
+  border-color: var(--color-red);
+}
+
+.hover-border-yellow:hover {
+  border-color: var(--color-yellow);
+}
+
+.hover-bg-transparent:hover {
+  background-color: transparent;
+}
+
+Hover Text Colors */
+.hover-text-blue:hover {
+  color: var(--color-blue);
+}
+
+.hover-text-green:hover {
+  color: var(--color-green);
+}
+
+.hover-text-orange:hover {
+  color: var(--color-orange);
+}
+
+.hover-text-white:hover {
+  color: #fff;
+}
+
+.hover-text-red:hover {
+  color: var(--color-red);
+}
+
+.hover-text-yellow:hover {
+  color: var(--color-yellow);
+}
+
