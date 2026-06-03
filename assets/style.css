@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS Custom Properties (Variables) */
+:root {
+  /* Brand Fonts */
+  --font-primary: "Playfair Display", serif;
+  --font-secondary: "Lato", sans-serif;
+
+  /* Brand Colors */
+    --color-blue: #537fbb;
+    --color-green: #318867;
+    --color-orange: #ff9933;
+
+}
+
+/* Global body styling - Frontend specific */
+body {
+  font-family: var(--font-secondary);
+}
+
+/* ============================================
+  TYPOGRAPHY UTILITIES
+============================================ */
+
+/* Primary (Serif) Font */
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+/* ============================================
+  COLOR UTILITIES
+============================================ */
+
+/* Text Colors */
+.text-blue{
+  color: var(--color-blue);
+}
+
+.text-green {
+  color: var(--color-green);
+}
+
+.text-orange {
+  color: var(--color-orange);
+}
+
+/* Background Colors */
+.bg-blue {
+  background-color: var(--color-blue);
+}
+
+.bg-green {
+  background-color: var(--color-green);
+}
+
+.bg-orange {
+  background-color: var(--color-orange);
+}
