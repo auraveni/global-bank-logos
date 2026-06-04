@@ -18,8 +18,8 @@ Thank you for your interest in contributing to this bank logos collection! We we
    - **File Naming**: Use lowercase with hyphens (e.g., `chase-bank.svg`, `hdfc-bank.svg`)
 
 3. **Add the Logo File**
-   - For Indian banks: Add to `src/assets/bank/indian-bank/`
-   - For International banks: Add to `src/assets/bank/international-bank/`
+   - For Indian banks: Add to `/assets/bank/indian-bank/`
+   - For International banks: Add to `/assets/bank/international-bank/`
 
 4. **Update Documentation**
    - Add the bank information to `README.md` in the appropriate table
@@ -65,7 +65,7 @@ For **Indian Banks**, add to the appropriate category table:
 ```markdown
 | Bank Name | Country | Logo |
 |-----------|---------|------|
-| Your Bank Name | India | ![Your Bank](src/assets/bank/indian-bank/your-bank.svg) |
+| Your Bank Name | India | ![Your Bank](/assets/bank/indian-bank/your-bank.svg) |
 ```
 
 For **International Banks**, add to the appropriate country section:
@@ -73,7 +73,7 @@ For **International Banks**, add to the appropriate country section:
 ```markdown
 | Bank Name | Country | Logo |
 |-----------|---------|------|
-| Your Bank Name | Country Name | ![Your Bank](src/assets/bank/international-bank/your-bank.svg) |
+| Your Bank Name | Country Name | ![Your Bank](/assets/bank/international-bank/your-bank.svg) |
 ```
 
 ### HTML Page Update
@@ -83,7 +83,7 @@ Add a bank card in the appropriate section:
 ```html
 <div class="bank-card">
   <div class="bank-logo">
-    <img src="src/assets/bank/[category]/your-bank.svg" alt="Your Bank Logo" />
+    <img src="/assets/bank/[category]/your-bank.svg" alt="Your Bank Logo" />
   </div>
   <div class="bank-name">Your Bank Name</div>
   <div class="bank-country">🇮🇳 Country</div>
