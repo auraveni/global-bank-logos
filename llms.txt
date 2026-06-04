@@ -24,8 +24,8 @@
 
 ## Repository Information
 
-**GitHub URL**: https://github.com/yourusername/all-bank-logo
-**Website**: https://yourusername.github.io/all-bank-logo
+**GitHub URL**: https://github.com/auraveni/global-bank-logos
+**Website**: https://auraveni.github.io/global-bank-logos
 **Documentation**: See README.md for complete documentation
 **Contributing**: See CONTRIBUTING.md for contribution guidelines
 
@@ -354,7 +354,7 @@ June 3, 2026
 
 ---
 
-**Repository URL**: https://github.com/yourusername/all-bank-logo
-**Live Demo**: https://yourusername.github.io/all-bank-logo
+**Repository URL**: https://github.com/auraveni/global-bank-logos
+**Live Demo**: https://auraveni.github.io/global-bank-logos
 **Documentation**: README.md
 **License**: MIT

@@ -1,8 +1,8 @@
 # 🏦 Bank Logos Collection - Indian & International Banks
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/all-bank-logo.svg)](https://github.com/yourusername/all-bank-logo/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/yourusername/all-bank-logo.svg)](https://github.com/yourusername/all-bank-logo/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/auraveni/global-bank-logos.svg)](https://github.com/auraveni/global-bank-logos/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/auraveni/global-bank-logos.svg)](https://github.com/auraveni/global-bank-logos/issues)
 
 > A comprehensive collection of high-quality SVG bank logos from India and around the world. Perfect for developers, designers, and financial applications.
 
@@ -43,142 +43,142 @@ This repository contains a curated collection of **bank logos in SVG format** fr
 
 | Bank Name | Country | Logo |
 |-----------|---------|------|
-| Axis Bank Ltd | India | ![Axis Bank](src/assets/bank/indian-bank/axis.svg) |
-| Bandhan Bank Ltd | India | ![Bandhan Bank](src/assets/bank/indian-bank/bandhan.svg) |
-| CSB Bank Limited | India | ![CSB Bank](src/assets/bank/indian-bank/csb.svg) |
-| City Union Bank Ltd | India | ![City Union Bank](src/assets/bank/indian-bank/city.svg) |
-| DCB Bank Ltd | India | ![DCB Bank](src/assets/bank/indian-bank/dcb.svg) |
-| Dhanlaxmi Bank Ltd | India | ![Dhanlaxmi Bank](src/assets/bank/indian-bank/dhanlaxmi.svg) |
-| Federal Bank Ltd | India | ![Federal Bank](src/assets/bank/indian-bank/federal.svg) |
-| HDFC Bank Ltd | India | ![HDFC Bank](src/assets/bank/indian-bank/hdfc.svg) |
-| ICICI Bank Ltd | India | ![ICICI Bank](src/assets/bank/indian-bank/icici.svg) |
-| IndusInd Bank Ltd | India | ![IndusInd Bank](src/assets/bank/indian-bank/indus.svg) |
-| IDFC FIRST Bank Limited | India | ![IDFC FIRST Bank](src/assets/bank/indian-bank/idfc.svg) |
-| Jammu & Kashmir Bank Ltd | India | ![J&K Bank](src/assets/bank/indian-bank/jnk.svg) |
-| Karnataka Bank Ltd | India | ![Karnataka Bank](src/assets/bank/indian-bank/karnataka.svg) |
-| Karur Vysya Bank Ltd | India | ![Karur Vysya Bank](src/assets/bank/indian-bank/kvb.svg) |
-| Kotak Mahindra Bank Ltd | India | ![Kotak Mahindra Bank](src/assets/bank/indian-bank/kotak.svg) |
-| Nainital Bank Ltd | India | ![Nainital Bank](src/assets/bank/indian-bank/ntb.svg) |
-| RBL Bank Ltd | India | ![RBL Bank](src/assets/bank/indian-bank/rbl.svg) |
-| South Indian Bank Ltd | India | ![South Indian Bank](src/assets/bank/indian-bank/sib.svg) |
-| Tamilnad Mercantile Bank Ltd | India | ![Tamilnad Mercantile Bank](src/assets/bank/indian-bank/tmb.svg) |
-| YES Bank Ltd | India | ![YES Bank](src/assets/bank/indian-bank/yes.svg) |
-| IDBI Bank Limited | India | ![IDBI Bank](src/assets/bank/indian-bank/idbi.svg) |
+| Axis Bank Ltd | India | ![Axis Bank](/assets/bank/indian-bank/axis.svg) |
+| Bandhan Bank Ltd | India | ![Bandhan Bank](/assets/bank/indian-bank/bandhan.svg) |
+| CSB Bank Limited | India | ![CSB Bank](/assets/bank/indian-bank/csb.svg) |
+| City Union Bank Ltd | India | ![City Union Bank](/assets/bank/indian-bank/city.svg) |
+| DCB Bank Ltd | India | ![DCB Bank](/assets/bank/indian-bank/dcb.svg) |
+| Dhanlaxmi Bank Ltd | India | ![Dhanlaxmi Bank](/assets/bank/indian-bank/dhanlaxmi.svg) |
+| Federal Bank Ltd | India | ![Federal Bank](/assets/bank/indian-bank/federal.svg) |
+| HDFC Bank Ltd | India | ![HDFC Bank](/assets/bank/indian-bank/hdfc.svg) |
+| ICICI Bank Ltd | India | ![ICICI Bank](/assets/bank/indian-bank/icici.svg) |
+| IndusInd Bank Ltd | India | ![IndusInd Bank](/assets/bank/indian-bank/indus.svg) |
+| IDFC FIRST Bank Limited | India | ![IDFC FIRST Bank](/assets/bank/indian-bank/idfc.svg) |
+| Jammu & Kashmir Bank Ltd | India | ![J&K Bank](/assets/bank/indian-bank/jnk.svg) |
+| Karnataka Bank Ltd | India | ![Karnataka Bank](/assets/bank/indian-bank/karnataka.svg) |
+| Karur Vysya Bank Ltd | India | ![Karur Vysya Bank](/assets/bank/indian-bank/kvb.svg) |
+| Kotak Mahindra Bank Ltd | India | ![Kotak Mahindra Bank](/assets/bank/indian-bank/kotak.svg) |
+| Nainital Bank Ltd | India | ![Nainital Bank](/assets/bank/indian-bank/ntb.svg) |
+| RBL Bank Ltd | India | ![RBL Bank](/assets/bank/indian-bank/rbl.svg) |
+| South Indian Bank Ltd | India | ![South Indian Bank](/assets/bank/indian-bank/sib.svg) |
+| Tamilnad Mercantile Bank Ltd | India | ![Tamilnad Mercantile Bank](/assets/bank/indian-bank/tmb.svg) |
+| YES Bank Ltd | India | ![YES Bank](/assets/bank/indian-bank/yes.svg) |
+| IDBI Bank Limited | India | ![IDBI Bank](/assets/bank/indian-bank/idbi.svg) |
 
 ### Public Sector Banks in India
 
 | Bank Name | Country | Logo |
 |-----------|---------|------|
-| Bank of Baroda | India | ![Bank of Baroda](src/assets/bank/indian-bank/bob.svg) |
-| Bank of India | India | ![Bank of India](src/assets/bank/indian-bank/boi.svg) |
-| Bank of Maharashtra | India | ![Bank of Maharashtra](src/assets/bank/indian-bank/bom.svg) |
-| Canara Bank | India | ![Canara Bank](src/assets/bank/indian-bank/canara.svg) |
-| Central Bank of India | India | ![Central Bank of India](src/assets/bank/indian-bank/cbi.svg) |
-| Indian Bank | India | ![Indian Bank](src/assets/bank/indian-bank/indian.svg) |
-| Indian Overseas Bank | India | ![Indian Overseas Bank](src/assets/bank/indian-bank/iob.svg) |
-| Punjab & Sind Bank | India | ![Punjab & Sind Bank](src/assets/bank/indian-bank/psb.svg) |
-| Punjab National Bank | India | ![Punjab National Bank](src/assets/bank/indian-bank/pnb.svg) |
-| State Bank of India | India | ![State Bank of India](src/assets/bank/indian-bank/sbi.svg) |
-| UCO Bank | India | ![UCO Bank](src/assets/bank/indian-bank/uco.svg) |
-| Union Bank of India | India | ![Union Bank of India](src/assets/bank/indian-bank/ubi.svg) |
+| Bank of Baroda | India | ![Bank of Baroda](/assets/bank/indian-bank/bob.svg) |
+| Bank of India | India | ![Bank of India](/assets/bank/indian-bank/boi.svg) |
+| Bank of Maharashtra | India | ![Bank of Maharashtra](/assets/bank/indian-bank/bom.svg) |
+| Canara Bank | India | ![Canara Bank](/assets/bank/indian-bank/canara.svg) |
+| Central Bank of India | India | ![Central Bank of India](/assets/bank/indian-bank/cbi.svg) |
+| Indian Bank | India | ![Indian Bank](/assets/bank/indian-bank/indian.svg) |
+| Indian Overseas Bank | India | ![Indian Overseas Bank](/assets/bank/indian-bank/iob.svg) |
+| Punjab & Sind Bank | India | ![Punjab & Sind Bank](/assets/bank/indian-bank/psb.svg) |
+| Punjab National Bank | India | ![Punjab National Bank](/assets/bank/indian-bank/pnb.svg) |
+| State Bank of India | India | ![State Bank of India](/assets/bank/indian-bank/sbi.svg) |
+| UCO Bank | India | ![UCO Bank](/assets/bank/indian-bank/uco.svg) |
+| Union Bank of India | India | ![Union Bank of India](/assets/bank/indian-bank/ubi.svg) |
 
 ### Small Finance Banks
 
 | Bank Name | Country | Logo |
 |-----------|---------|------|
-| AU Small Finance Bank Ltd | India | ![AU Small Finance Bank](src/assets/bank/indian-bank/ausfb.svg) |
-| ESAF Small Finance Bank Ltd | India | ![ESAF Small Finance Bank](src/assets/bank/indian-bank/esaf.svg) |
-| Ujjivan Small Finance Bank Ltd | India | ![Ujjivan Small Finance Bank](src/assets/bank/indian-bank/ujjivan.svg) |
+| AU Small Finance Bank Ltd | India | ![AU Small Finance Bank](/assets/bank/indian-bank/ausfb.svg) |
+| ESAF Small Finance Bank Ltd | India | ![ESAF Small Finance Bank](/assets/bank/indian-bank/esaf.svg) |
+| Ujjivan Small Finance Bank Ltd | India | ![Ujjivan Small Finance Bank](/assets/bank/indian-bank/ujjivan.svg) |
 
 ### Payment Banks (PB)
 
 | Bank Name | Country | Logo |
 |-----------|---------|------|
-| Airtel Payments Bank Ltd | India | ![Airtel Payments Bank](src/assets/bank/indian-bank/apb.svg) |
-| India Post Payments Bank Ltd | India | ![India Post Payments Bank](src/assets/bank/indian-bank/indiapost.svg) |
-| FINO Payments Bank Ltd | India | ![FINO Payments Bank](src/assets/bank/indian-bank/fino.svg) |
-| Paytm Payments Bank Ltd | India | ![Paytm Payments Bank](src/assets/bank/indian-bank/paytm.svg) |
-| Jio Payments Bank Ltd | India | ![Jio Payments Bank](src/assets/bank/indian-bank/jio.svg) |
+| Airtel Payments Bank Ltd | India | ![Airtel Payments Bank](/assets/bank/indian-bank/apb.svg) |
+| India Post Payments Bank Ltd | India | ![India Post Payments Bank](/assets/bank/indian-bank/indiapost.svg) |
+| FINO Payments Bank Ltd | India | ![FINO Payments Bank](/assets/bank/indian-bank/fino.svg) |
+| Paytm Payments Bank Ltd | India | ![Paytm Payments Bank](/assets/bank/indian-bank/paytm.svg) |
+| Jio Payments Bank Ltd | India | ![Jio Payments Bank](/assets/bank/indian-bank/jio.svg) |
 
 ## 🌍 International Banks
 
 | Bank Name | Country | Logo |
 |-----------|---------|------|
 | **Australia** | | |
-| Australia & New Zealand Banking Group (ANZ) | Australia | ![ANZ](src/assets/bank/international-bank/anz.svg) |
-| Commonwealth Bank | Australia | ![Commonwealth Bank](src/assets/bank/international-bank/commonwealth.svg) |
-| National Australia Bank (NAB) | Australia | ![NAB](src/assets/bank/international-bank/nab.svg) |
-| Westpac | Australia | ![Westpac](src/assets/bank/international-bank/westpac.svg) |
+| Australia & New Zealand Banking Group (ANZ) | Australia | ![ANZ](/assets/bank/international-bank/anz.svg) |
+| Commonwealth Bank | Australia | ![Commonwealth Bank](/assets/bank/international-bank/commonwealth.svg) |
+| National Australia Bank (NAB) | Australia | ![NAB](/assets/bank/international-bank/nab.svg) |
+| Westpac | Australia | ![Westpac](/assets/bank/international-bank/westpac.svg) |
 | **Bahrain** | | |
-| Bank of Bahrain and Kuwait (BBK) | Bahrain | ![BBK](src/assets/bank/international-bank/bbk.svg) |
+| Bank of Bahrain and Kuwait (BBK) | Bahrain | ![BBK](/assets/bank/international-bank/bbk.svg) |
 | **Bangladesh** | | |
-| Sonali Bank | Bangladesh | ![Sonali Bank](src/assets/bank/international-bank/sonali.svg) |
+| Sonali Bank | Bangladesh | ![Sonali Bank](/assets/bank/international-bank/sonali.svg) |
 | **Canada** | | |
-| Royal Bank of Canada (RBC) | Canada | ![RBC](src/assets/bank/international-bank/rbc.svg) |
-| Scotiabank | Canada | ![Scotiabank](src/assets/bank/international-bank/scotia.svg) |
-| TD Bank | Canada | ![TD Bank](src/assets/bank/international-bank/td.svg) |
+| Royal Bank of Canada (RBC) | Canada | ![RBC](/assets/bank/international-bank/rbc.svg) |
+| Scotiabank | Canada | ![Scotiabank](/assets/bank/international-bank/scotia.svg) |
+| TD Bank | Canada | ![TD Bank](/assets/bank/international-bank/td.svg) |
 | **China** | | |
-| Bank of China (BOC) | China | ![Bank of China](src/assets/bank/international-bank/boc.svg) |
-| Industrial & Commercial Bank of China (ICBC) | China | ![ICBC](src/assets/bank/international-bank/icbc.svg) |
+| Bank of China (BOC) | China | ![Bank of China](/assets/bank/international-bank/boc.svg) |
+| Industrial & Commercial Bank of China (ICBC) | China | ![ICBC](/assets/bank/international-bank/icbc.svg) |
 | **Denmark** | | |
-| Saxo Bank | Denmark | ![Saxo Bank](src/assets/bank/international-bank/saxo.svg) |
+| Saxo Bank | Denmark | ![Saxo Bank](/assets/bank/international-bank/saxo.svg) |
 | **England/UK** | | |
-| Barclays | United Kingdom | ![Barclays](src/assets/bank/international-bank/barclays.svg) |
-| HSBC Bank India | United Kingdom | ![HSBC](src/assets/bank/international-bank/hsbc.svg) |
-| Standard Chartered Bank | United Kingdom | ![Standard Chartered](src/assets/bank/international-bank/standard.svg) |
+| Barclays | United Kingdom | ![Barclays](/assets/bank/international-bank/barclays.svg) |
+| HSBC Bank India | United Kingdom | ![HSBC](/assets/bank/international-bank/hsbc.svg) |
+| Standard Chartered Bank | United Kingdom | ![Standard Chartered](/assets/bank/international-bank/standard.svg) |
 | **France** | | |
-| BNP Paribas | France | ![BNP Paribas](src/assets/bank/international-bank/bnp.svg) |
-| Société Générale | France | ![Société Générale](src/assets/bank/international-bank/societe-generale.svg) |
-| Crédit Agricole Corporate and Investment Bank (CACIB) | France | ![CACIB](src/assets/bank/international-bank/cacib.svg) |
+| BNP Paribas | France | ![BNP Paribas](/assets/bank/international-bank/bnp.svg) |
+| Société Générale | France | ![Société Générale](/assets/bank/international-bank/societe-generale.svg) |
+| Crédit Agricole Corporate and Investment Bank (CACIB) | France | ![CACIB](/assets/bank/international-bank/cacib.svg) |
 | **Germany** | | |
-| Deutsche Bank | Germany | ![Deutsche Bank](src/assets/bank/international-bank/deutsche.svg) |
+| Deutsche Bank | Germany | ![Deutsche Bank](/assets/bank/international-bank/deutsche.svg) |
 | **Indonesia** | | |
-| Bank Maybank Indonesia | Indonesia | ![Maybank](src/assets/bank/international-bank/maybank.svg) |
+| Bank Maybank Indonesia | Indonesia | ![Maybank](/assets/bank/international-bank/maybank.svg) |
 | **Japan** | | |
-| Mizuho Corporate Bank | Japan | ![Mizuho](src/assets/bank/international-bank/mizuho.svg) |
-| MUFG Bank | Japan | ![MUFG Bank](src/assets/bank/international-bank/mufg.svg) |
-| Sumitomo Mitsui Banking Corporation (SMBC) | Japan | ![SMBC](src/assets/bank/international-bank/smbc.svg) |
+| Mizuho Corporate Bank | Japan | ![Mizuho](/assets/bank/international-bank/mizuho.svg) |
+| MUFG Bank | Japan | ![MUFG Bank](/assets/bank/international-bank/mufg.svg) |
+| Sumitomo Mitsui Banking Corporation (SMBC) | Japan | ![SMBC](/assets/bank/international-bank/smbc.svg) |
 | **Netherlands** | | |
-| ABN AMRO | Netherlands | ![ABN AMRO](src/assets/bank/international-bank/abn-amro.svg) |
-| Rabobank | Netherlands | ![Rabobank](src/assets/bank/international-bank/rabobank.svg) |
+| ABN AMRO | Netherlands | ![ABN AMRO](/assets/bank/international-bank/abn-amro.svg) |
+| Rabobank | Netherlands | ![Rabobank](/assets/bank/international-bank/rabobank.svg) |
 | **Qatar** | | |
-| Doha Bank | Qatar | ![Doha Bank](src/assets/bank/international-bank/doha.svg) |
-| Qatar National Bank (QNB) | Qatar | ![QNB](src/assets/bank/international-bank/qnb.svg) |
+| Doha Bank | Qatar | ![Doha Bank](/assets/bank/international-bank/doha.svg) |
+| Qatar National Bank (QNB) | Qatar | ![QNB](/assets/bank/international-bank/qnb.svg) |
 | **Russia** | | |
-| Sberbank | Russia | ![Sberbank](src/assets/bank/international-bank/sberbank.svg) |
+| Sberbank | Russia | ![Sberbank](/assets/bank/international-bank/sberbank.svg) |
 | **Scotland** | | |
-| NatWest Group | Scotland | ![NatWest](src/assets/bank/international-bank/natwest.svg) |
+| NatWest Group | Scotland | ![NatWest](/assets/bank/international-bank/natwest.svg) |
 | **Singapore** | | |
-| DBS Bank | Singapore | ![DBS Bank](src/assets/bank/international-bank/dbs.svg) |
-| Oversea-Chinese Banking Corporation (OCBC) | Singapore | ![OCBC](src/assets/bank/international-bank/ocbc.svg) |
-| United Overseas Bank (UOB) | Singapore | ![UOB](src/assets/bank/international-bank/uob.svg) |
+| DBS Bank | Singapore | ![DBS Bank](/assets/bank/international-bank/dbs.svg) |
+| Oversea-Chinese Banking Corporation (OCBC) | Singapore | ![OCBC](/assets/bank/international-bank/ocbc.svg) |
+| United Overseas Bank (UOB) | Singapore | ![UOB](/assets/bank/international-bank/uob.svg) |
 | **South Africa** | | |
-| FirstRand Bank | South Africa | ![FirstRand Bank](src/assets/bank/international-bank/firstrand.svg) |
+| FirstRand Bank | South Africa | ![FirstRand Bank](/assets/bank/international-bank/firstrand.svg) |
 | **South Korea** | | |
-| Industrial Bank of Korea | South Korea | ![Korea Bank](src/assets/bank/international-bank/korea-bank.svg) |
-| KEB Hana Bank | South Korea | ![Hana Bank](src/assets/bank/international-bank/hana.svg) |
-| Kookmin Bank | South Korea | ![Kookmin Bank](src/assets/bank/international-bank/kookmin.svg) |
-| Shinhan Bank | South Korea | ![Shinhan Bank](src/assets/bank/international-bank/shinhan.svg) |
-| Woori Bank | South Korea | ![Woori Bank](src/assets/bank/international-bank/woori.svg) |
+| Industrial Bank of Korea | South Korea | ![Korea Bank](/assets/bank/international-bank/korea-bank.svg) |
+| KEB Hana Bank | South Korea | ![Hana Bank](/assets/bank/international-bank/hana.svg) |
+| Kookmin Bank | South Korea | ![Kookmin Bank](/assets/bank/international-bank/kookmin.svg) |
+| Shinhan Bank | South Korea | ![Shinhan Bank](/assets/bank/international-bank/shinhan.svg) |
+| Woori Bank | South Korea | ![Woori Bank](/assets/bank/international-bank/woori.svg) |
 | **Sri Lanka** | | |
-| Bank of Ceylon | Sri Lanka | ![Bank of Ceylon](src/assets/bank/international-bank/ceylon-bank.svg) |
+| Bank of Ceylon | Sri Lanka | ![Bank of Ceylon](/assets/bank/international-bank/ceylon-bank.svg) |
 | **Sweden** | | |
-| Handelsbanken | Sweden | ![Handelsbanken](src/assets/bank/international-bank/handelsbanken.svg) |
+| Handelsbanken | Sweden | ![Handelsbanken](/assets/bank/international-bank/handelsbanken.svg) |
 | **Switzerland** | | |
-| Credit Suisse | Switzerland | ![Credit Suisse](src/assets/bank/international-bank/credit-suisse.svg) |
-| UBS | Switzerland | ![UBS](src/assets/bank/international-bank/ubs.svg) |
+| Credit Suisse | Switzerland | ![Credit Suisse](/assets/bank/international-bank/credit-suisse.svg) |
+| UBS | Switzerland | ![UBS](/assets/bank/international-bank/ubs.svg) |
 | **Thailand** | | |
-| Krung Thai Bank | Thailand | ![Krung Thai Bank](src/assets/bank/international-bank/krungthai.svg) |
+| Krung Thai Bank | Thailand | ![Krung Thai Bank](/assets/bank/international-bank/krungthai.svg) |
 | **United Arab Emirates** | | |
-| Abu Dhabi Commercial Bank (ADCB) | UAE | ![ADCB](src/assets/bank/international-bank/adcb.svg) |
-| Emirates NBD | UAE | ![Emirates NBD](src/assets/bank/international-bank/emirates-nbd.svg) |
-| First Abu Dhabi Bank (FAB) | UAE | ![FAB](src/assets/bank/international-bank/fab.svg) |
+| Abu Dhabi Commercial Bank (ADCB) | UAE | ![ADCB](/assets/bank/international-bank/adcb.svg) |
+| Emirates NBD | UAE | ![Emirates NBD](/assets/bank/international-bank/emirates-nbd.svg) |
+| First Abu Dhabi Bank (FAB) | UAE | ![FAB](/assets/bank/international-bank/fab.svg) |
 | **United States of America** | | |
-| American Express | USA | ![American Express](src/assets/bank/international-bank/american-express.svg) |
-| Bank of America | USA | ![Bank of America](src/assets/bank/international-bank/boa.svg) |
-| Citibank (Citi) | USA | ![Citibank](src/assets/bank/international-bank/citi.svg) |
-| JPMorgan Chase | USA | ![JPMorgan Chase](src/assets/bank/international-bank/chase.svg) |
-| Wells Fargo | USA | ![Wells Fargo](src/assets/bank/international-bank/wells.svg) |
+| American Express | USA | ![American Express](/assets/bank/international-bank/american-express.svg) |
+| Bank of America | USA | ![Bank of America](/assets/bank/international-bank/boa.svg) |
+| Citibank (Citi) | USA | ![Citibank](/assets/bank/international-bank/citi.svg) |
+| JPMorgan Chase | USA | ![JPMorgan Chase](/assets/bank/international-bank/chase.svg) |
+| Wells Fargo | USA | ![Wells Fargo](/assets/bank/international-bank/wells.svg) |
 
 ## 🚀 Usage
 
@@ -186,26 +186,26 @@ This repository contains a curated collection of **bank logos in SVG format** fr
 Simply clone this repository and use the SVG files:
 
 ```bash
-git clone https://github.com/yourusername/all-bank-logo.git
-cd all-bank-logo
+git clone https://github.com/auraveni/global-bank-logos.git
+cd global-bank-logos
 ```
 
 ### HTML Usage
 ```html
-<img src="src/assets/bank/indian-bank/hdfc.svg" alt="HDFC Bank Logo" width="100">
-<img src="src/assets/bank/international-bank/chase.svg" alt="JPMorgan Chase Logo" width="100">
+<img src="assets/bank/indian-bank/hdfc.svg" alt="HDFC Bank Logo" width="100">
+<img src="assets/bank/international-bank/chase.svg" alt="JPMorgan Chase Logo" width="100">
 ```
 
 ### React/Vue Usage
 ```javascript
-import hdfcLogo from './assets/bank/indian-bank/hdfc.svg'
-import chaseLogo from './assets/bank/international-bank/chase.svg'
+import hdfcLogo from '/assets/bank/indian-bank/hdfc.svg'
+import chaseLogo from '/assets/bank/international-bank/chase.svg'
 ```
 
 ### CSS Background
 ```css
 .bank-logo {
-  background-image: url('src/assets/bank/indian-bank/sbi.svg');
+  background-image: url('/assets/bank/indian-bank/sbi.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -220,7 +220,7 @@ npm install all-bank-logos
 
 ### CDN (Coming Soon)
 ```html
-<script src="https://cdn.jsdelivr.net/gh/yourusername/all-bank-logo@main/dist/bank-logos.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/auraveni/global-bank-logos@main/dist/bank-logos.js"></script>
 ```
 
 ## 🤝 Contributing
@@ -258,7 +258,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📮 Contact & Support
 
-- Create an [Issue](https://github.com/yourusername/all-bank-logo/issues) for bug reports or feature requests
+- Create an [Issue](https://github.com/auraveni/global-bank-logos/issues) for bug reports or feature requests
 - Star ⭐ this repository if you find it useful
 - Share with other developers
 

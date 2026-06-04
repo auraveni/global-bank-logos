@@ -1,11 +1,11 @@
 # robots.txt for Bank Logos Collection
-# https://yourusername.github.io/all-bank-logo/
+# https://auraveni.github.io/global-bank-logos/
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://yourusername.github.io/all-bank-logo/sitemap.xml
+Sitemap: https://auraveni.github.io/global-bank-logos/sitemap.xml
 
 # Allow all search engines to crawl
 User-agent: Googlebot
